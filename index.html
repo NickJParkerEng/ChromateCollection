@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Chromate Collection</title>
+
+        <meta charset="utf-8">
+
+        <style>
+
+            body {
+                background: url(Chromate.jpg);
+               background-size: 100% 100%;
+                background-repeat: no-repeat-y;
+
+                
+            }
+
+            .songOne {
+                top:400px;
+                right:800px;
+                width: 700px;
+                height: 230px;
+                margin-top: 300px;
+                margin-left: 100px;
+                border-style: none;
+                padding-right:0px;
+                background: transparent;
+                
+            }
+            
+        </style>
+            <script>
+                var audio1 = new Audio('Song1.mp3');
+                audio1.oncanplaythrough = function (){}
+                audio1.onended = function (){}
+           </script>
+    </head>
+    <body>
+
+        <button type="button" class="songOne" onclick="audio1.play()">
+
+        </button>
+       
+</html>
